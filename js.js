@@ -113,3 +113,61 @@ function mrdavid(age,dob) {
     return(age+dob)
     
 }
+function addNumbers(number) {  // sum of an even number
+    let sum = 0;
+    for(let i = 0; i <= number; i=i+2) {
+
+        if(number % 2 !== 0) {
+            return ('Sorry not an even number')
+        }
+        else {
+            sum = sum + i;
+        }
+    }
+    return sum;
+}
+
+console.log(addNumbers(10));
+
+
+function addNum(number){  // sum of a number
+    let sum = 0;
+    for (let i = 0; i <= number; i++) {
+        sum = sum + i;
+    }
+    return sum;
+}
+console.log(addNum(5));
+
+
+let grades = [["sam", "john", "jones"],83,["kelvin", "hart"],85,["durant","kevin"],93,72]
+//jones is not sam but kevin john is 85 years old
+
+console.log(`${grades[0][2]} is not ${grades[0][0]} but ${grades[4][1]} ${grades[0][1]} is 85 years old`);
+
+grades.pop()
+let removed = grades.pop()
+
+console.log(`The removed item was ${removed}`);
+
+grades.push("I am new here")
+
+console.log(grades);
+
+grades[0].push('James')
+
+console.log(grades);
+
+//Array uses index [0] to find its value, object uses key (student.name) to find its values
+
+let student = {
+    name: "John",
+    age: 25,
+    grade: 85
+}
+
+console.log(`${student.name} is ${student.age} years old and has a grade of ${student.grade}`);
+
+
+
+
